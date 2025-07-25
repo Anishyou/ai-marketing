@@ -1,0 +1,45 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.egg
+*.egg-info/
+dist/
+build/
+env/
+.venv/
+venv/
+.Python
+*.log
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Docker
+*.pid
+*.db
+*.sock
+.dockerignore
+
+# VS Code / IDEs
+.vscode/
+.idea/
+*.swp
+
+# Environment & Secrets
+.env
+.env.*
+config/application_local.yml
+config/llm_config.yml
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Pytest
+htmlcov/
+.coverage
+.tox/
+.cache/
+.pytest_cache/
