@@ -146,5 +146,3 @@ ai-marketing/
 
 ---
 
-
-MIT License. See [LICENSE](LICENSE) for details.
