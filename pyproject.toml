@@ -1,0 +1,28 @@
+[tool.poetry]
+name = "digital-marketing"
+version = "0.1.0"
+description = "AI-powered marketing strategy generator for restaurants"
+authors = ["Your Name <you@example.com>"]
+readme = "README.md"
+packages = [{ include = "app" }]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+fastapi = "^0.110.0"
+uvicorn = "^0.29.0"
+openai = "^1.30.0"
+pyyaml = "^6.0.1"
+pydantic = "^2.7.1"
+
+[tool.poetry.scripts]
+start = "uvicorn app.main:app --host 0.0.0.0 --port 8080"
+
+[tool.poetry.group.dev.dependencies]
+black = "^24.4.2"
+isort = "^5.13.2"
+pylint = "^3.2.2"
+pytest = "^8.2.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

@@ -1,8 +1,12 @@
-from pydantic import BaseModel
+from pydantic import BaseModel, HttpUrl
 from typing import List, Optional
 
 class ChatRequest(BaseModel):
-    prompt: str
+    project_name: str
+    website_url: HttpUrl
+    description: Optional[str] = None
+    goals: List[str]  # e.g. ["Awareness", "Sales"]
+    timeframe: Optional[str] = None  # e.g. "next week"
 
 class PostContent(BaseModel):
     caption: str
