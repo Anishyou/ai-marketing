@@ -8,9 +8,9 @@ This project provides a backend API that uses GPT-4 and DALL·E to generate digi
 
 - 🔎 Extracts restaurant website & campaign timeframe from user prompts
 - 🧠 Uses **GPT-4** to generate:
-    - Marketing strategy
-    - 5 social media post captions
-    - 5 visual prompts for DALL·E
+  - Marketing strategy
+  - 5 social media post captions
+  - 5 visual prompts for DALL·E
 - 🎨 Uses **DALL·E** to generate images based on prompts
 - 🔐 Token-based API authorization
 - 🐳 Deployable via Docker
@@ -41,8 +41,7 @@ Content-Type: application/json
       "caption": "Experience the taste of Italy this weekend 🍝",
       "image_prompt": "A cozy Italian bistro with wine, pasta and candlelight",
       "image_url": "https://..."
-    },
-    ...
+    }
   ],
   "detected_url": "https://bellissimofood.com",
   "detected_timeframe": "2025-08-01"
